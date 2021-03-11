@@ -1,7 +1,5 @@
 # 在服务器CentOS7上部署nginx遇到的问题
 
-
-
 安装的是nginx1.14.0版本
 
 ## 下载源码
@@ -45,6 +43,7 @@ make && make install
 ```
 
 输出：
+
 ```shell
 nginx version: nginx/1.14.0
 built by gcc 4.8.5 20150623 (Red Hat 4.8.5-28) (GCC) 
@@ -66,6 +65,7 @@ vim /etc/init.d/nginx
 ```
 
 输入如下内容
+
 ```shell
 #!/bin/sh
 #
@@ -253,6 +253,7 @@ Commercial support is available at
 ```
 
 ## 配置优化
+
 下列配置在nginx.conf里与http节点同级
 
 ```shell
@@ -300,4 +301,3 @@ nginx -t
 ## 参考资料
 
 <https://www.cnblogs.com/stulzq/p/9291223.html>
-
